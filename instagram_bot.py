@@ -109,6 +109,7 @@ class Instagram_Bot:
                 print("[+] Sleeping for 1800 sec to avoid hitting rate limit...")
                 print("[+] Time stopped: {}".format(datetime.now()))
                 time.sleep(1800)
+                i=0
 
 # Init user data (username, password)
 instagram_user = Instagram_Bot(sys.argv[1], sys.argv[2])
