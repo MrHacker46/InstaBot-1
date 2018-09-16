@@ -7,5 +7,4 @@ As of 2018-09-04, the current likes per hour rate limit for Instagram varies on 
 You can fork, copy this program as you like as long as you credit the author (https://github.com/n30-14/instagram_bot)
 Constructive criticism welcomed... Enjoy! :)
 
-*** I AM NOT RESPONSIBLE TO WHATEVER HAPPENS TO YOUR ACCOUNT *** 
-*** I MADE THIS PROGRAM FOR LEARNING PURPOSES (LEARNING PYTHON) ***
+*** I AM NOT RESPONSIBLE TO WHATEVER HAPPENS TO YOUR ACCOUNT. I MADE THIS PROGRAM FOR LEARNING PURPOSES (LEARNING PYTHON) ***
