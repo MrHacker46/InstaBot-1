@@ -38,7 +38,7 @@ def usage(argc):
 	print("  password:  password of the instagram account")
 	print("  hashtag :  a hashtag or a wordlist file containing hashtags to use\n")
 	print("Example:")
-	print("  {} ___ch1pmunx___ passtheword123 /file/path/to/wordlist.txt".format(sys.argv[0]))
+	print("  {} ___ch1pmunx___ passtheword123 hashtag.txt".format(sys.argv[0]))
 	sys.exit(1)
 
 # This method is used to login the user...
@@ -85,7 +85,7 @@ def like_photo(driver, hashtag):
     while True:
     	print("[+] Current photo: {}".format(i))
 
-	if i > randint(111, 144):
+	if i > randint(144, 188):
 	    print("[+] {} <3 reached!...".format(i))
 	    print("[+] Taking a 30 min nap...")
 	    print("[+] Time stopped: {}".format(datetime.datetime.now()))
@@ -103,7 +103,7 @@ def like_photo(driver, hashtag):
     	    print("  - Next photo...")
 	    next_photo = driver.find_element_by_xpath("//a[@class='HBoOv coreSpriteRightPaginationArrow']")
 	    next_photo.click()
-    	    time.sleep(1)
+    	    time.sleep(4)
 
 	    # Increment `i`
 	    i+=1
@@ -112,7 +112,7 @@ def like_photo(driver, hashtag):
 	    try:
 		next_photo = driver.find_element_by_xpath("//a[@class='HBoOv coreSpriteRightPaginationArrow']")
 		next_photo.click()
-		time.sleep(1)
+		time.sleep(2)
     	    except:
 	    	# Go back to the start of the page
 	    	driver.get("https://www.instagram.com/explore/tags/" + hashtag)
