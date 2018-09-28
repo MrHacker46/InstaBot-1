@@ -1,7 +1,7 @@
 # instabot
 This is an Instagram bot that likes a users picture in order to gain more followers (real users).
 
-You can obviously do this manually by hand, scrolling tiresly throught Instagram or...
+You can obviously do this manually by hand, scrolling tirelessly through Instagram or...
 
 This program scrolls through a certain hashtag, e.g(#linux, #programming, etc) and likes `n` pictures.
 It's main purpose is to gain followers without being banned or using fake accounts.
