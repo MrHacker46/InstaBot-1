@@ -17,5 +17,5 @@ $ ./instabot.py <username> <password> <hashtag>
 ```
 ### Example:
 ```bash
-$ ./instaboy.py ___ch1pmunx___ passtheword123 #linux
+$ ./instaboy.py '___ch1pmunx___' 'passtheword123' '#linux'
 ```
