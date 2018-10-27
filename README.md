@@ -10,3 +10,12 @@
 > __Constructive criticism welcomed... Enjoy! :)__
 
 > __*** I AM NOT RESPONSIBLE TO WHATEVER HAPPENS TO YOUR ACCOUNT. I MADE THIS PROGRAM FOR LEARNING PURPOSES (LEARNING PYTHON) ***__
+
+### Usage:
+```bash
+$ ./instabot.py <username> <password> <hashtag>
+```
+### Example:
+```bash
+$ ./instaboy.py ___ch1pmunx___ passtheword123 #linux
+```
