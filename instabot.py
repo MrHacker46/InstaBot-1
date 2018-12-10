@@ -32,7 +32,7 @@ def main():
 # This method displays usage message to the user...
 def usage(argc):
     if argc != 4:
-    	print("Usage: {} username password hashtag\n".format(sys.argv[0]))
+    	print("Usage: {} <username> <password> <hashtag>\n".format(sys.argv[0]))
     	print("Options:")
 	print("  username:  your instagram username you want to use to login")
 	print("  password:  password of the instagram account")
@@ -99,7 +99,7 @@ def like_photo(driver, hashtag):
 	    like_photo.click()
 	    time.sleep(1)
 
-	    # Got to next photo
+	    # Go to next photo
     	    print("  - Next photo...")
 	    next_photo = driver.find_element_by_xpath("//a[@class='HBoOv coreSpriteRightPaginationArrow']")
 	    next_photo.click()
@@ -113,14 +113,16 @@ def like_photo(driver, hashtag):
 		next_photo = driver.find_element_by_xpath("//a[@class='HBoOv coreSpriteRightPaginationArrow']")
 		next_photo.click()
 		time.sleep(2)
+    		# HERE IS THE BUG
     	    except:
+	    	print("[!] Locating right arrow!!!!")
 	    	# Go back to the start of the page
-	    	driver.get("https://www.instagram.com/explore/tags/" + hashtag)
-		time.sleep(3)
+		# driver.get("https://www.instagram.com/explore/tags/" + hashtag)
+		time.sleep(5)
 		# Click the first photo
-		first_photo = driver.find_element_by_xpath("/html/body/span/section/main/article/div[1]/div/div/div[1]/div[1]/a")
-		driver.execute_script("arguments[0].click();", first_photo)
-		time.sleep(1)
+		# first_photo = driver.find_element_by_xpath("/html/body/span/section/main/article/div[1]/div/div/div[1]/div[1]/a")
+		# driver.execute_script("arguments[0].click();", first_photo)
+		# time.sleep(1)
 
 
 
