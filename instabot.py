@@ -37,7 +37,7 @@ def usage(argc):
         print("  password:  password of the instagram account")
         print("  hashtag :  a hashtag or a wordlist file containing hashtags to use\n")
         print("Example:")
-        print("  {} ___ch1pmunx___ passtheword123 hashtag.txt".format(sys.argv[0]))
+        print("  {} nameuser321 passtheword123 hashtag.txt".format(sys.argv[0]))
         sys.exit(1)
 
 # This method is used to login the user...
